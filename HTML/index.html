@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="https://fonts.googleapis.com/css?family=Gruppo|Montserrat+Alternates|Questrial" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Clima</title>
 
@@ -48,8 +48,8 @@
 </head>
 
 <body>
-    <div class="container ">
-        <div class="row">
+    <div class="container grad1 ">
+        <div class="row ">
             
             <div class="col-lg-12 col-xs-12 grad1 ">
                 <center> 
@@ -70,6 +70,11 @@
         
                                   <strong> <p id="status"></p> </strong>
                                 </div>
+
+                                <div class="input-group mb-3">
+                                    <input type="text" id="city_input" class="form-control" placeholder="Pesquisar cidade" aria-label="Pesquisar cidade" aria-describedby="basic-addon2">
+                                    <br>                                    
+                                    <button onclick="requestWeather();" class="btn btn-primary" type="submit" id="idbutton"> Pesquisar</button>
                                 <hr>
                                 <div>
                                     <ul>
@@ -93,6 +98,7 @@
         crossorigin="anonymous"></script>
 
     <script type="text/javascript" src="clima.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 
 </html>
